@@ -8,5 +8,5 @@ Choose a Regional bucket and set a unique name (use your project ID because it i
 
 gcloud compute zones list
 
-datalab create mydatalabvm --zone <ZONE>
+datalab create mydatalabvm --zone ```<ZONE>```
 
