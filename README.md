@@ -59,6 +59,13 @@ from google.cloud import bigquery
 df = bigquery.Client().query(query + " LIMIT 100").to_dataframe()
 df.head()
 
+# 	weight_pounds	is_male	mother_age	plurality	gestation_weeks	hashmonth
+# 0	7.063611	True	32	1	37.0	7108882242435606404
+# 1	4.687028	True	30	3	33.0	7170969733900686954
+# 2	7.561856	True	20	1	39.0	6392072535155213407
+# 3	7.561856	True	31	1	37.0	2126480030009879160
+# 4	7.312733	True	32	1	40.0	3408502330831153141
+
 # Create SQL query using natality data after the year 2000
 query2 = """
 SELECT
