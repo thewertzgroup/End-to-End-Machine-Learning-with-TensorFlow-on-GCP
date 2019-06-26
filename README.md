@@ -26,8 +26,8 @@ rm -rf training-data-analyst/.git
 
 ```
 # change these to try this notebook out
-BUCKET = 'qwiklabs-gcp-00133e9b52c77968'   # CHANGE this to a globally unique value. Your project name is a good option to try.
-PROJECT = 'qwiklabs-gcp-00133e9b52c77968'     # CHANGE this to your project name
+BUCKET = 'qwiklabs-gcp-XXXXXXXXXXXXXXX'   # CHANGE this to a globally unique value. Your project name is a good option to try.
+PROJECT = 'qwiklabs-gcp-XXXXXXXXXXXXXXX'     # CHANGE this to your project name
 REGION = 'us-central1'               # CHANGE this to one of the regions supported by Cloud AI Platform https://cloud.google.com/ml-engine/docs/tensorflow/regions
 
 import os
@@ -76,11 +76,9 @@ from google.cloud import bigquery
 df = bigquery.Client().query(query2).to_dataframe()
 df.head()
 
-<pre>
-is_male	num_babies	avg_wt
-False	16245054	7.104715
- True	17026860	7.349797
-</pre>
+# is_male	num_babies	avg_wt
+# False	16245054	7.104715
+# True	17026860	7.349797
 
 from google.cloud import bigquery
 df = bigquery.Client().query(query).to_dataframe()
